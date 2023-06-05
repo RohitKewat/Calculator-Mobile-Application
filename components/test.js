@@ -14,6 +14,7 @@ const Test = (props) => {
     }
     useEffect(() => {
         let str2 = input1.join('');
+        console.log(str2);
         setoperator(str2)
 
     }, [input1])
@@ -22,9 +23,11 @@ const Test = (props) => {
         if(re){
             setResult(re)
         }else{
+
             setResult("ERROR");
         }
         setinput1([])
+        console.log(result);
     }
     return (
         <View>
